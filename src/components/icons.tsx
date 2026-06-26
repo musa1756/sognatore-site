@@ -118,14 +118,10 @@ export const SOCIALS = [
 ];
 
 export const PAYMENTS = [
-  "American Express",
-  "Apple Pay",
-  "Diners Club",
-  "Discover",
-  "Google Pay",
-  "Maestro",
-  "Mastercard",
-  "Shop Pay",
-  "Union Pay",
   "Visa",
+  "Mastercard",
+  "Мир",
+  "СБП",
+  "Наличные",
+  "Рассрочка",
 ];

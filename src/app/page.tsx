@@ -13,11 +13,19 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <SplitPanels />
-        <CategoryGrid />
-        <CoutureSection />
+        <div id="bespoke" className="scroll-mt-[120px]">
+          <SplitPanels />
+        </div>
+        <div id="catalog" className="scroll-mt-[120px]">
+          <CategoryGrid />
+        </div>
+        <div id="about" className="scroll-mt-[120px]">
+          <CoutureSection />
+        </div>
       </main>
-      <Footer />
+      <div id="contacts">
+        <Footer />
+      </div>
     </>
   );
 }

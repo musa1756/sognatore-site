@@ -12,9 +12,9 @@ export function CoutureSection() {
         sizes="100vw"
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/40" />
 
-      <Reveal className="relative z-10 flex max-w-2xl flex-col items-center px-6 text-center text-cream">
+      <Reveal className="relative z-10 flex max-w-2xl flex-col items-center px-6 text-center text-cream [text-shadow:0_2px_22px_rgba(0,0,0,0.5)]">
         <span className="eyebrow text-cream">{COUTURE.eyebrow}</span>
         <h2 className="mt-4 font-serif text-[clamp(1.9rem,3vw,38px)] leading-tight text-cream">
           {COUTURE.title}

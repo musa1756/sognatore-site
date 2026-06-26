@@ -5,7 +5,7 @@ import "./globals.css";
 // Body / UI — exact match to the source site.
 const libreFranklin = Libre_Franklin({
   variable: "--font-sans",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
@@ -13,16 +13,16 @@ const libreFranklin = Libre_Franklin({
 // Headings + nav — substitute for Adobe "Big Moore" (a high-contrast Didone).
 const playfair = Playfair_Display({
   variable: "--font-serif",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "600"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Edward Sexton",
+  title: "Sognatore — индивидуальный пошив мужской одежды и обуви",
   description:
-    "Edward Sexton — Savile Row tailoring. Bespoke and ready-to-wear suits, jackets, shirts and casual wear, sculpted around you.",
-  icons: { icon: "/seo/favicon.png" },
+    "Sognatore — премиальное ателье в Москве. Индивидуальный пошив костюмов, пиджаков, пальто, верхней одежды и обуви по вашей мерке. Выезд мастера для снятия мерок.",
+  icons: { icon: "/images/sognatore-logo.svg" },
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ru"
       className={`${libreFranklin.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">{children}</body>

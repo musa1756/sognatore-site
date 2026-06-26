@@ -39,14 +39,14 @@ export function Header() {
           >
             <MenuIcon />
           </button>
-          <a href="/" aria-label="Edward Sexton" className="block">
+          <a href="/" aria-label="Sognatore" className="block">
             <Image
-              src="/images/edward-sexton-logo.svg"
-              alt="Edward Sexton"
-              width={250}
-              height={28}
+              src="/images/sognatore-logo.svg"
+              alt="Sognatore"
+              width={180}
+              height={34}
               priority
-              className="h-[26px] w-auto sm:h-[28px]"
+              className="h-[30px] w-auto sm:h-[34px]"
             />
           </a>
         </div>
@@ -87,7 +87,7 @@ export function Header() {
           />
           <div className="absolute inset-y-0 left-0 w-[82%] max-w-sm bg-cream px-6 py-6">
             <div className="flex items-center justify-between">
-              <span className="font-serif text-xl text-ink-strong">Menu</span>
+              <span className="font-serif text-xl text-ink-strong">Меню</span>
               <button type="button" aria-label="Close menu" onClick={() => setMenuOpen(false)}>
                 <CloseIcon className="text-ink-strong" />
               </button>

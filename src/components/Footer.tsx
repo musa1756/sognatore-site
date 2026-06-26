@@ -17,12 +17,12 @@ export function Footer() {
             <form className="mt-6 max-w-xs">
               <input
                 type="email"
-                placeholder="Enter email"
-                aria-label="Email"
+                placeholder="Введите e-mail"
+                aria-label="E-mail"
                 className="w-full border border-footer-text/40 bg-transparent px-4 py-3 text-[15px] text-cream placeholder:text-footer-text/60 focus:border-cream focus:outline-none"
               />
               <button type="submit" className="es-btn es-btn--ghost-light mt-4">
-                Sign Up
+                Подписаться
               </button>
             </form>
             <div className="mt-7 flex items-center gap-4">
@@ -54,20 +54,24 @@ export function Footer() {
 
           {/* Contact */}
           <div className="space-y-4 text-[17px]">
-            <a href={`mailto:${FOOTER.contact.email}`} className="block transition-opacity hover:opacity-70">
-              {FOOTER.contact.email}
+            <a href="tel:+79859108888" className="block transition-opacity hover:opacity-70">
+              {FOOTER.contact.phone}
             </a>
-            <p>{FOOTER.contact.phone}</p>
-            <p>{FOOTER.contact.whatsapp}</p>
+            <a href="tel:+79774933209" className="block transition-opacity hover:opacity-70">
+              {FOOTER.contact.phone2}
+            </a>
+            <a href="https://wa.me/79859108888" className="block transition-opacity hover:opacity-70">
+              {FOOTER.contact.whatsapp}
+            </a>
+            <a href="https://t.me/" className="block transition-opacity hover:opacity-70">
+              {FOOTER.contact.telegram}
+            </a>
             <p className="leading-relaxed">
               {FOOTER.contact.address}
               <br />
               {FOOTER.contact.hours}
             </p>
-            <p>{FOOTER.contact.usa}</p>
-            <a href="/pages/returns" className="block transition-opacity hover:opacity-70">
-              {FOOTER.contact.returns}
-            </a>
+            <p>{FOOTER.contact.visit}</p>
           </div>
         </div>
       </div>
