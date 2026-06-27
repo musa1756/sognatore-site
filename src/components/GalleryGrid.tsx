@@ -1,4 +1,4 @@
-import { asset } from "@/lib/asset";
+import { asset, withBasePath } from "@/lib/asset";
 import type { GalleryItem } from "@/types/site";
 
 type GalleryGridProps = {
@@ -13,7 +13,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
           {row.map((item) => (
             <a
               className={`gallery-card ${item.wide ? "gallery-card--wide" : ""}`}
-              href={item.href}
+              href={withBasePath(item.href)}
               key={item.title}
             >
               <img src={asset(item.image)} alt="" style={{ objectPosition: item.position ?? "center center" }} />

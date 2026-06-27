@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AccountIcon, CartIcon, CloseIcon, MenuIcon, SearchIcon } from "@/components/icons";
+import { withBasePath } from "@/lib/asset";
 import { catalogMenuColumns } from "@/lib/catalog";
 import { contact, navItems } from "@/lib/site";
 
@@ -12,7 +13,7 @@ export function Header() {
           <label className="mobile-menu-button" htmlFor="mobile-menu-toggle" aria-label="Toggle menu">
             <MenuIcon />
           </label>
-          <a className="logo-link" href="/" aria-label="Sognatore home">
+          <a className="logo-link" href={withBasePath("/")} aria-label="Sognatore home">
             <Image src="/images/sognatore-logo.svg" alt="Sognatore" width={792} height={147} priority />
           </a>
         </div>
@@ -21,7 +22,7 @@ export function Header() {
           {navItems.map((item) =>
             item.label === "Пошив" ? (
               <div className="mega-menu" key={item.label}>
-                <a className="mega-menu__trigger" href={item.href}>
+                <a className="mega-menu__trigger" href={withBasePath(item.href)}>
                   {item.label}
                 </a>
                 <div className="mega-menu__panel">
@@ -30,7 +31,7 @@ export function Header() {
                       <section className="mega-menu__column" key={column.title}>
                         <h2>{column.title}</h2>
                         {column.links.map((link) => (
-                          <a href={link.href} key={link.label}>
+                          <a href={withBasePath(link.href)} key={link.label}>
                             {link.label}
                           </a>
                         ))}
@@ -40,7 +41,7 @@ export function Header() {
                 </div>
               </div>
             ) : (
-              <a key={item.label} href={item.href}>
+              <a key={item.label} href={withBasePath(item.href)}>
                 {item.label}
               </a>
             ),
@@ -48,10 +49,10 @@ export function Header() {
         </nav>
 
         <div className="header-actions">
-          <a className="icon-link" href="/#contacts" aria-label="Contacts">
+          <a className="icon-link" href={withBasePath("/#contacts")} aria-label="Contacts">
             <AccountIcon />
           </a>
-          <a className="icon-link" href="/catalog/all" aria-label="Catalog search">
+          <a className="icon-link" href={withBasePath("/catalog/all")} aria-label="Catalog search">
             <SearchIcon />
           </a>
           <a className="icon-link" href={contact.whatsapp} aria-label="WhatsApp">
@@ -65,7 +66,7 @@ export function Header() {
           <CloseIcon />
         </label>
         {navItems.map((item) => (
-          <a key={item.label} href={item.href}>
+          <a key={item.label} href={withBasePath(item.href)}>
             {item.label}
           </a>
         ))}
@@ -74,7 +75,7 @@ export function Header() {
             <section key={column.title}>
               <h2>{column.title}</h2>
               {column.links.map((link) => (
-                <a href={link.href} key={link.label}>
+                <a href={withBasePath(link.href)} key={link.label}>
                   {link.label}
                 </a>
               ))}

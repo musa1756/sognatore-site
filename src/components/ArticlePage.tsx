@@ -1,7 +1,7 @@
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { asset } from "@/lib/asset";
+import { asset, withBasePath } from "@/lib/asset";
 import type { ArticleContent } from "@/types/site";
 
 export function ArticlePage({ content }: { content: ArticleContent }) {
@@ -45,7 +45,7 @@ export function ArticlePage({ content }: { content: ArticleContent }) {
                 </ol>
               ) : null}
               {block.cta ? (
-                <a className="button button--dark article-cta" href={block.cta.href}>
+                <a className="button button--dark article-cta" href={withBasePath(block.cta.href)}>
                   {block.cta.label}
                 </a>
               ) : null}

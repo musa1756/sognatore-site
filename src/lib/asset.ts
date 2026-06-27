@@ -6,3 +6,9 @@ export const BASE_PATH = process.env.NODE_ENV === "production" ? "/sognatore-sit
 
 export const asset = (path: string): string =>
   path.startsWith("/") ? `${BASE_PATH}${path}` : path;
+
+// Internal links written as plain <a href="/..."> also need the basePath.
+// External links (tel:, https:, mailto:) and bare anchors don't start with
+// "/", so they pass through untouched.
+export const withBasePath = (href: string): string =>
+  href.startsWith("/") ? `${BASE_PATH}${href}` : href;

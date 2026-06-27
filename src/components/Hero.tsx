@@ -1,4 +1,4 @@
-import { asset } from "@/lib/asset";
+import { asset, withBasePath } from "@/lib/asset";
 import { hero } from "@/lib/site";
 
 export function Hero() {
@@ -14,7 +14,7 @@ export function Hero() {
         <p>{hero.copy}</p>
         <div className="hero-actions">
           {hero.actions.map((action) => (
-            <a className="button button--hero" href={action.href} key={action.label}>
+            <a className="button button--hero" href={withBasePath(action.href)} key={action.label}>
               {action.label}
             </a>
           ))}

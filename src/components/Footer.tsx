@@ -1,3 +1,4 @@
+import { withBasePath } from "@/lib/asset";
 import { contact, footerColumns, socials } from "@/lib/site";
 
 export function Footer() {
@@ -35,7 +36,7 @@ export function Footer() {
           <nav className="footer-block footer-menu" aria-label={column.title} key={column.title}>
             <h2>{column.title}</h2>
             {column.links.map((link) => (
-              <a href={link.href} key={link.label}>
+              <a href={withBasePath(link.href)} key={link.label}>
                 {link.label}
               </a>
             ))}
