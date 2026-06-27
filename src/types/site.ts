@@ -31,6 +31,8 @@ export type CatalogCategory = {
   menuLabel: string;
   eyebrow: string;
   description: string;
+  heroImage: string;
+  heroPosition?: string;
   products: CatalogProduct[];
 };
 
