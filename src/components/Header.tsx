@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { CloseIcon, MenuIcon } from "@/components/icons";
-import { contact, navItems } from "@/lib/site";
+import { AccountIcon, CartIcon, CloseIcon, MenuIcon, SearchIcon } from "@/components/icons";
+import { catalogMenuColumns, contact, navItems } from "@/lib/site";
 
 export function Header() {
   return (
@@ -17,19 +17,42 @@ export function Header() {
         </div>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
-          {navItems.map((item) => (
-            <a key={item.label} href={item.href}>
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) =>
+            item.label === "Пошив" ? (
+              <details className="mega-menu" key={item.label}>
+                <summary className="mega-menu__summary">{item.label}</summary>
+                <div className="mega-menu__panel">
+                  <div className="mega-menu__inner">
+                    {catalogMenuColumns.map((column) => (
+                      <section className="mega-menu__column" key={column.title}>
+                        <h2>{column.title}</h2>
+                        {column.links.map((link) => (
+                          <a href={link.href} key={link.label}>
+                            {link.label}
+                          </a>
+                        ))}
+                      </section>
+                    ))}
+                  </div>
+                </div>
+              </details>
+            ) : (
+              <a key={item.label} href={item.href}>
+                {item.label}
+              </a>
+            ),
+          )}
         </nav>
 
         <div className="header-actions">
-          <a className="header-contact-link" href={contact.phoneHref}>
-            {contact.phone}
+          <a className="icon-link" href="https://sognatore.ru/contacts" aria-label="Contacts">
+            <AccountIcon />
           </a>
-          <a className="header-whatsapp-link" href={contact.whatsapp}>
-            WhatsApp
+          <a className="icon-link" href="https://sognatore.ru/catalog" aria-label="Catalog search">
+            <SearchIcon />
+          </a>
+          <a className="icon-link" href={contact.whatsapp} aria-label="WhatsApp">
+            <CartIcon />
           </a>
         </div>
       </div>
@@ -43,6 +66,18 @@ export function Header() {
             {item.label}
           </a>
         ))}
+        <div className="mobile-catalog-links">
+          {catalogMenuColumns.map((column) => (
+            <section key={column.title}>
+              <h2>{column.title}</h2>
+              {column.links.map((link) => (
+                <a href={link.href} key={link.label}>
+                  {link.label}
+                </a>
+              ))}
+            </section>
+          ))}
+        </div>
       </nav>
       <label className="mobile-drawer-backdrop" htmlFor="mobile-menu-toggle" aria-hidden="true" />
     </header>
