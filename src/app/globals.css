@@ -406,7 +406,7 @@ img {
 }
 
 .button--hero:hover {
-  background: rgba(44, 49, 47, 0.06);
+  background: #d9d8d2;
   color: var(--green);
 }
 
