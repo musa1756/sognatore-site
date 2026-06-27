@@ -140,8 +140,8 @@ export const catalogMenuColumns: CatalogMenuColumn[] = [
   {
     title: "Услуги",
     links: [
-      link("Подарочный сертификат", "/#contacts"),
-      link("Выездной сервис", "/#contacts"),
+      link("Подарочный сертификат", "/certificate"),
+      link("Выездной сервис", "/outcall"),
       link("Контакты", "/#contacts"),
     ],
   },

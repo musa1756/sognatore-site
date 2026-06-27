@@ -38,3 +38,30 @@ export type CatalogMenuColumn = {
   title: string;
   links: NavItem[];
 };
+
+export type ArticleBlock = {
+  eyebrow?: string;
+  title: string;
+  paragraphs: string[];
+  steps?: string[];
+  cta?: NavItem;
+  image: string;
+  alt: string;
+};
+
+export type ArticleFeature = {
+  title: string;
+  image: string;
+  alt: string;
+};
+
+export type ArticleContent = {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  heroImage: string;
+  heroAlt: string;
+  lede: string;
+  blocks: ArticleBlock[];
+  feature?: ArticleFeature;
+};

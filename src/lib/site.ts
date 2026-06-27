@@ -4,7 +4,7 @@ export const navItems: NavItem[] = [
   { label: "Пошив", href: "/catalog/all" },
   { label: "Обувь", href: "/catalog/shoes" },
   { label: "Ткани", href: "/catalog/fabrics" },
-  { label: "Сертификат", href: "/#contacts" },
+  { label: "Сертификат", href: "/certificate" },
   { label: "Контакты", href: "/#contacts" },
 ];
 
@@ -68,13 +68,13 @@ export const galleryItems: GalleryItem[] = [
     title: "Выездной сервис",
     eyebrow: "Портной приедет домой или в офис в удобное время",
     cta: "Заказать выезд",
-    href: "/#contacts",
+    href: "/outcall",
     image: "/images/sognatore-service-2.png",
   },
   {
     title: "Подарочный сертификат",
     cta: "Подарить",
-    href: "/#contacts",
+    href: "/certificate",
     image: "/images/sognatore-certificate.jpg",
     position: "center center",
   },
@@ -96,9 +96,9 @@ export const footerColumns: FooterColumn[] = [
       { label: "Индивидуальный пошив", href: "/catalog/all" },
       { label: "Обувь", href: "/catalog/shoes" },
       { label: "Ткани", href: "/catalog/fabrics" },
-      { label: "Подарочный сертификат", href: "/#contacts" },
+      { label: "Подарочный сертификат", href: "/certificate" },
       { label: "Корпоративные заказы", href: "/#contacts" },
-      { label: "Выездной сервис", href: "/#contacts" },
+      { label: "Выездной сервис", href: "/outcall" },
     ],
   },
   {
