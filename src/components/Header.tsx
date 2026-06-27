@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { AccountIcon, CartIcon, CloseIcon, MenuIcon, SearchIcon } from "@/components/icons";
-import { catalogMenuColumns, contact, navItems } from "@/lib/site";
+import { catalogMenuColumns } from "@/lib/catalog";
+import { contact, navItems } from "@/lib/site";
 
 export function Header() {
   return (
