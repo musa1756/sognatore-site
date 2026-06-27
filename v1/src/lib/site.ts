@@ -16,7 +16,7 @@ export const hero = {
     { label: "Записаться", href: "tel:+79859108888" },
     {
       label: "Получить каталог",
-      href: "https://wa.me/89774933209?text=%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3",
+      href: "/catalog/all",
     },
   ],
 };
