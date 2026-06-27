@@ -35,7 +35,7 @@ export function ContactSection() {
         </div>
       </div>
       <figure className="contact-section__media">
-        <img src={asset("/images/sognatore-contact.jpg")} alt="Образ Sognatore" />
+        <img src={asset("/images/sognatore-contact-measure-generated.png")} alt="Портной снимает мерки для индивидуального пошива Sognatore" />
       </figure>
     </section>
   );
