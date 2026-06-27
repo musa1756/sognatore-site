@@ -66,7 +66,7 @@ export default async function CatalogCategoryPage({ params }: CatalogPageProps) 
         <section className="catalog-grid" aria-label={`${data.title}: демо-каталог`}>
           {data.products.map((product) => (
             <article className="catalog-card" key={product.title}>
-              <Link className="catalog-card__media" href="https://sognatore.ru/contacts">
+              <Link className="catalog-card__media" href="/#contacts">
                 <span className="catalog-card__image-frame">
                   <img alt="" src={product.image} />
                 </span>

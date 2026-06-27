@@ -2,10 +2,10 @@ import type { FooterColumn, GalleryItem, NavItem } from "@/types/site";
 
 export const navItems: NavItem[] = [
   { label: "Пошив", href: "/catalog/all" },
-  { label: "Обувь", href: "https://sognatore.ru/shoes" },
-  { label: "Ткани", href: "https://sognatore.ru/catalog" },
-  { label: "Сертификат", href: "https://sognatore.ru/certificate" },
-  { label: "Контакты", href: "https://sognatore.ru/contacts" },
+  { label: "Обувь", href: "/catalog/shoes" },
+  { label: "Ткани", href: "/catalog/fabrics" },
+  { label: "Сертификат", href: "/#contacts" },
+  { label: "Контакты", href: "/#contacts" },
 ];
 
 export const hero = {
@@ -40,21 +40,21 @@ export const galleryItems: GalleryItem[] = [
   {
     title: "Ткани",
     cta: "Выбрать материал",
-    href: "https://sognatore.ru/catalog",
+    href: "/catalog/fabrics",
     image: "/images/pattern-cutting.jpg",
     position: "center bottom",
   },
   {
     title: "Индивидуальный пошив обуви",
     cta: "Обувь",
-    href: "https://sognatore.ru/shoes",
+    href: "/catalog/shoes",
     image: "/images/sognatore-shoes.jpg",
     position: "center bottom",
   },
   {
     title: "Корпоративный заказ",
     cta: "Обсудить",
-    href: "https://sognatore.ru/corporate",
+    href: "/#contacts",
     image: "/images/sognatore-service-1.png",
     position: "center center",
   },
@@ -68,13 +68,13 @@ export const galleryItems: GalleryItem[] = [
     title: "Выездной сервис",
     eyebrow: "Портной приедет домой или в офис в удобное время",
     cta: "Заказать выезд",
-    href: "https://sognatore.ru/outcall",
+    href: "/#contacts",
     image: "/images/sognatore-service-2.png",
   },
   {
     title: "Подарочный сертификат",
     cta: "Подарить",
-    href: "https://sognatore.ru/certificate",
+    href: "/#contacts",
     image: "/images/sognatore-certificate.jpg",
     position: "center center",
   },
@@ -83,7 +83,7 @@ export const galleryItems: GalleryItem[] = [
     eyebrow:
       "Сохраняем ваши мерки, чтобы следующий заказ можно было оформить быстрее или удаленно",
     cta: "Связаться",
-    href: "https://sognatore.ru/contacts",
+    href: "/#contacts",
     image: "/images/sognatore-wide-tailoring-generated.png",
     wide: true,
   },
@@ -94,19 +94,19 @@ export const footerColumns: FooterColumn[] = [
     title: "Направления",
     links: [
       { label: "Индивидуальный пошив", href: "/catalog/all" },
-      { label: "Обувь", href: "https://sognatore.ru/shoes" },
-      { label: "Ткани", href: "https://sognatore.ru/catalog" },
-      { label: "Подарочный сертификат", href: "https://sognatore.ru/certificate" },
-      { label: "Корпоративные заказы", href: "https://sognatore.ru/corporate" },
-      { label: "Выездной сервис", href: "https://sognatore.ru/outcall" },
+      { label: "Обувь", href: "/catalog/shoes" },
+      { label: "Ткани", href: "/catalog/fabrics" },
+      { label: "Подарочный сертификат", href: "/#contacts" },
+      { label: "Корпоративные заказы", href: "/#contacts" },
+      { label: "Выездной сервис", href: "/#contacts" },
     ],
   },
   {
     title: "Покупателям",
     links: [
-      { label: "Контакты", href: "https://sognatore.ru/contacts" },
-      { label: "Политика конфиденциальности", href: "https://sognatore.ru/policy" },
-      { label: "Договор оферты", href: "https://sognatore.ru/oferta" },
+      { label: "Контакты", href: "/#contacts" },
+      { label: "Политика конфиденциальности", href: "/" },
+      { label: "Договор оферты", href: "/" },
     ],
   },
 ];

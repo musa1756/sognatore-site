@@ -12,7 +12,7 @@ export function Header() {
           <label className="mobile-menu-button" htmlFor="mobile-menu-toggle" aria-label="Toggle menu">
             <MenuIcon />
           </label>
-          <a className="logo-link" href="https://sognatore.ru/" aria-label="Sognatore home">
+          <a className="logo-link" href="/" aria-label="Sognatore home">
             <Image src="/images/sognatore-logo.svg" alt="Sognatore" width={792} height={147} priority />
           </a>
         </div>
@@ -20,8 +20,10 @@ export function Header() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navItems.map((item) =>
             item.label === "Пошив" ? (
-              <details className="mega-menu" key={item.label}>
-                <summary className="mega-menu__summary">{item.label}</summary>
+              <div className="mega-menu" key={item.label}>
+                <a className="mega-menu__trigger" href={item.href}>
+                  {item.label}
+                </a>
                 <div className="mega-menu__panel">
                   <div className="mega-menu__inner">
                     {catalogMenuColumns.map((column) => (
@@ -36,7 +38,7 @@ export function Header() {
                     ))}
                   </div>
                 </div>
-              </details>
+              </div>
             ) : (
               <a key={item.label} href={item.href}>
                 {item.label}
@@ -46,10 +48,10 @@ export function Header() {
         </nav>
 
         <div className="header-actions">
-          <a className="icon-link" href="https://sognatore.ru/contacts" aria-label="Contacts">
+          <a className="icon-link" href="/#contacts" aria-label="Contacts">
             <AccountIcon />
           </a>
-          <a className="icon-link" href="https://sognatore.ru/catalog" aria-label="Catalog search">
+          <a className="icon-link" href="/catalog/all" aria-label="Catalog search">
             <SearchIcon />
           </a>
           <a className="icon-link" href={contact.whatsapp} aria-label="WhatsApp">

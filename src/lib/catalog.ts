@@ -121,24 +121,28 @@ const link = (label: string, href: string) => ({ label, href });
 
 export const catalogMenuColumns: CatalogMenuColumn[] = [
   {
-    title: "Изделия",
-    links: catalogCategories.map((category) => link(category.menuLabel, `/catalog/${category.slug}`)),
-  },
-  {
-    title: "Каталог",
+    title: "Одежда",
     links: [
       link("Все изделия", "/catalog/all"),
       link("Костюмы", "/catalog/suits"),
+      link("Пиджаки", "/catalog/jackets"),
+      link("Брюки", "/catalog/trousers"),
+      link("Пальто", "/catalog/coats"),
+    ],
+  },
+  {
+    title: "Обувь и ткани",
+    links: [
       link("Обувь", "/catalog/shoes"),
       link("Ткани", "/catalog/fabrics"),
     ],
   },
   {
-    title: "Сервис",
+    title: "Услуги",
     links: [
-      link("Подарочный сертификат", "https://sognatore.ru/certificate"),
-      link("Выезд мастера", "https://sognatore.ru/outcall"),
-      link("Контакты", "https://sognatore.ru/contacts"),
+      link("Подарочный сертификат", "/#contacts"),
+      link("Выездной сервис", "/#contacts"),
+      link("Контакты", "/#contacts"),
     ],
   },
 ];
