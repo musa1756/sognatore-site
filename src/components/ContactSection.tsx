@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import { contact } from "@/lib/site";
 
 export function ContactSection() {
@@ -34,7 +35,7 @@ export function ContactSection() {
         </div>
       </div>
       <figure className="contact-section__media">
-        <img src="/images/sognatore-contact.jpg" alt="Образ Sognatore" />
+        <img src={asset("/images/sognatore-contact.jpg")} alt="Образ Sognatore" />
       </figure>
     </section>
   );

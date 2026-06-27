@@ -1,6 +1,7 @@
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { asset } from "@/lib/asset";
 import type { ArticleContent } from "@/types/site";
 
 export function ArticlePage({ content }: { content: ArticleContent }) {
@@ -9,7 +10,7 @@ export function ArticlePage({ content }: { content: ArticleContent }) {
       <Header />
       <main className="article-page">
         <section className="article-hero">
-          <img src={content.heroImage} alt={content.heroAlt} />
+          <img src={asset(content.heroImage)} alt={content.heroAlt} />
           <div className="image-overlay" />
           <div className="article-hero__inner">
             <p className="article-hero__eyebrow">{content.eyebrow}</p>
@@ -28,7 +29,7 @@ export function ArticlePage({ content }: { content: ArticleContent }) {
             key={block.title}
           >
             <figure className="article-block__media">
-              <img src={block.image} alt={block.alt} />
+              <img src={asset(block.image)} alt={block.alt} />
             </figure>
             <div className="article-block__text">
               {block.eyebrow ? <p className="article-block__eyebrow">{block.eyebrow}</p> : null}
@@ -54,7 +55,7 @@ export function ArticlePage({ content }: { content: ArticleContent }) {
 
         {content.feature ? (
           <section className="article-feature">
-            <img src={content.feature.image} alt={content.feature.alt} />
+            <img src={asset(content.feature.image)} alt={content.feature.alt} />
             <div className="image-overlay" />
             <div className="article-feature__text">
               <h2>{content.feature.title}</h2>

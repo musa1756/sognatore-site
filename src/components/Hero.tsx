@@ -1,11 +1,12 @@
+import { asset } from "@/lib/asset";
 import { hero } from "@/lib/site";
 
 export function Hero() {
   return (
     <section className="hero-section">
       <picture className="hero-media">
-        <source media="(max-width: 767px)" srcSet="/images/sognatore-measure.jpg" />
-        <img src="/images/sognatore-craft-photo.png" alt="" />
+        <source media="(max-width: 767px)" srcSet={asset("/images/sognatore-measure.jpg")} />
+        <img src={asset("/images/sognatore-craft-photo.png")} alt="" />
       </picture>
       <div className="image-overlay" />
       <div className="hero-content">

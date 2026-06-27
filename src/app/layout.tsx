@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { asset } from "@/lib/asset";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Бутик-ателье Sognatore в Москве: индивидуальный пошив костюмов, пальто, рубашек и обуви по вашим меркам.",
   icons: {
-    icon: "/seo/sognatore-favicon.png",
+    icon: asset("/seo/sognatore-favicon.png"),
   },
 };
 

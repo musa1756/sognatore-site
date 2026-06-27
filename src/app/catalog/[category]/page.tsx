@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { ChevronDownIcon, ChevronRightIcon, FilterIcon } from "@/components/icons";
+import { asset } from "@/lib/asset";
 import { catalogCategories, getCatalogCategory } from "@/lib/catalog";
 
 type CatalogPageProps = {
@@ -38,7 +39,7 @@ export default async function CatalogCategoryPage({ params }: CatalogPageProps) 
       <main className="catalog-page">
         <section className="catalog-hero">
           <div className="catalog-hero__media" aria-hidden="true">
-            <img alt="" src={data.heroImage} style={{ objectPosition: data.heroPosition }} />
+            <img alt="" src={asset(data.heroImage)} style={{ objectPosition: data.heroPosition }} />
           </div>
           <div className="catalog-hero__overlay" />
           <div className="catalog-hero__content">
@@ -74,7 +75,7 @@ export default async function CatalogCategoryPage({ params }: CatalogPageProps) 
             <article className="catalog-card" key={product.title}>
               <Link className="catalog-card__media" href="/#contacts">
                 <span className="catalog-card__image-frame">
-                  <img alt="" src={product.image} />
+                  <img alt="" src={asset(product.image)} />
                 </span>
                 <span className="catalog-card__quick-buy">Заказать</span>
               </Link>

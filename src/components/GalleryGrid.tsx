@@ -1,3 +1,4 @@
+import { asset } from "@/lib/asset";
 import type { GalleryItem } from "@/types/site";
 
 type GalleryGridProps = {
@@ -15,7 +16,7 @@ export function GalleryGrid({ items }: GalleryGridProps) {
               href={item.href}
               key={item.title}
             >
-              <img src={item.image} alt="" style={{ objectPosition: item.position ?? "center center" }} />
+              <img src={asset(item.image)} alt="" style={{ objectPosition: item.position ?? "center center" }} />
               <span className="image-overlay" />
               <span className="gallery-card__content">
                 {item.eyebrow ? <span className="eyebrow">{item.eyebrow}</span> : null}
