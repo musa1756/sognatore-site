@@ -37,7 +37,13 @@ export default async function CatalogCategoryPage({ params }: CatalogPageProps) 
       <Header />
       <main className="catalog-page">
         <section className="catalog-hero">
-          <h1>{data.title}</h1>
+          <div className="catalog-hero__media" aria-hidden="true">
+            <img alt="" src={data.heroImage} style={{ objectPosition: data.heroPosition }} />
+          </div>
+          <div className="catalog-hero__overlay" />
+          <div className="catalog-hero__content">
+            <h1>{data.title}</h1>
+          </div>
         </section>
 
         <section className="catalog-toolbar" aria-label="Управление каталогом">
