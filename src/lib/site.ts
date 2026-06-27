@@ -1,114 +1,131 @@
 import type { FooterColumn, GalleryItem, NavItem } from "@/types/site";
 
 export const navItems: NavItem[] = [
-  { label: "Bespoke Services", href: "/pages/tailoring-services" },
-  { label: "Tailoring", href: "/collections/ready-to-wear-tailoring" },
-  { label: "Shirts", href: "/collections/shirts" },
-  { label: "Casual Wear", href: "/collections/casual-wear" },
-  { label: "Accessories", href: "/collections/accessories" },
-  { label: "Discover", href: "/pages/our-heritage" },
-  { label: "Trunk Shows", href: "/pages/trunk-shows" },
+  { label: "Пошив", href: "https://sognatore.ru/sewing" },
+  { label: "Обувь", href: "https://sognatore.ru/shoes" },
+  { label: "Ткани", href: "https://sognatore.ru/catalog" },
+  { label: "Сертификат", href: "https://sognatore.ru/certificate" },
+  { label: "Контакты", href: "https://sognatore.ru/contacts" },
 ];
 
 export const hero = {
-  title: "Spring Summer",
-  copy: "The Shape of Summer - softer shapes and lighter fabrics.",
+  title: "Индивидуальный пошив мужской одежды и обуви",
+  copy:
+    "Бутик-ателье Sognatore в Москве: костюмы, пиджаки, пальто и обувь по вашим меркам.",
   actions: [
-    { label: "Shop The collection", href: "/collections/spring-summer-27" },
-    { label: "The shape of Summer", href: "/collections/the-shape-of-summer" },
+    { label: "Записаться на снятие мерок", href: "tel:+79859108888" },
+    {
+      label: "Получить каталог",
+      href: "https://wa.me/89774933209?text=%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%20%D0%BA%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3",
+    },
   ],
 };
 
 export const galleryItems: GalleryItem[] = [
   {
-    title: "Bespoke",
-    eyebrow: "Have your clothes sculpted around you",
-    cta: "Discover",
-    href: "/pages/tailoring-services",
+    title: "Индивидуальный пошив костюма",
+    eyebrow: "Идеальная посадка с учетом особенностей фигуры",
+    cta: "Записаться",
+    href: "https://sognatore.ru/sewing",
+    image: "/images/sognatore-measure.jpg",
+    position: "center center",
+  },
+  {
+    title: "Готовая коллекция мужской одежды",
+    eyebrow: "Образы для тех, кто ценит спокойную уверенность",
+    cta: "Каталог",
+    href: "https://sognatore.ru/catalog",
+    image: "/images/ready-to-wear.jpg",
+  },
+  {
+    title: "Ткани",
+    cta: "Выбрать материал",
+    href: "https://sognatore.ru/catalog",
     image: "/images/pattern-cutting.jpg",
     position: "center bottom",
   },
   {
-    title: "Ready To Wear",
-    eyebrow: "The iconic sexton look",
-    cta: "Shop",
-    href: "/collections/ready-to-wear-tailoring",
-    image: "/images/ready-to-wear.jpg",
+    title: "Индивидуальный пошив обуви",
+    cta: "Обувь",
+    href: "https://sognatore.ru/shoes",
+    image: "/images/sognatore-shoes.jpg",
+    position: "center bottom",
   },
   {
-    title: "Jackets",
-    cta: "View Collection",
-    href: "/collections/jackets",
-    image: "/images/jackets.jpg",
+    title: "Корпоративный заказ",
+    cta: "Обсудить",
+    href: "https://sognatore.ru/corporate",
+    image: "/images/sognatore-service-1.png",
+    position: "center center",
   },
   {
-    title: "Suits",
-    cta: "View Collection",
-    href: "/collections/suits",
-    image: "/images/suits.jpg",
-  },
-  {
-    title: "Shirts",
-    cta: "View Collection",
-    href: "/collections/shirts",
+    title: "Рубашки и детали гардероба",
+    cta: "Подробнее",
+    href: "https://sognatore.ru/sewing",
     image: "/images/shirts.jpg",
   },
   {
-    title: "Black Tie",
-    cta: "View Collection",
-    href: "/collections/black-tie-and-cocktail",
-    image: "/images/black-tie.jpg",
+    title: "Выездной сервис",
+    eyebrow: "Портной приедет домой или в офис в удобное время",
+    cta: "Заказать выезд",
+    href: "https://sognatore.ru/outcall",
+    image: "/images/sognatore-service-2.png",
   },
   {
-    title: "Casual Wear",
-    cta: "View Casual Wear",
-    href: "/collections/casual-wear",
-    image: "/images/casual-jackets.jpg",
+    title: "Подарочный сертификат",
+    cta: "Подарить",
+    href: "https://sognatore.ru/certificate",
+    image: "/images/sognatore-certificate.jpg",
+    position: "center center",
   },
   {
-    title: "Discover Edward Sexton",
-    cta: "Heritage",
-    href: "/pages/our-heritage",
-    image: "/images/heritage.jpg",
-  },
-  {
-    title: "Couture Craft",
+    title: "Sognatore",
     eyebrow:
-      "Since the early 70s we have been making striking bespoke women's suits",
-    cta: "Women's Bespoke",
-    href: "/pages/womens-bespoke",
-    image: "/images/womens-bespoke.jpg",
+      "Сохраняем ваши мерки, чтобы следующий заказ можно было оформить быстрее или удаленно",
+    cta: "Связаться",
+    href: "https://sognatore.ru/contacts",
+    image: "/images/sognatore-craft-photo.png",
     wide: true,
   },
 ];
 
 export const footerColumns: FooterColumn[] = [
   {
-    title: "Information",
+    title: "Направления",
     links: [
-      { label: "Contact Us", href: "/pages/contact-us" },
-      { label: "Overseas Trips", href: "/pages/trunk-shows" },
-      { label: "Tailoring Services", href: "/pages/tailoring-services" },
-      { label: "Shirting Services", href: "/pages/shirting-services" },
-      { label: "Women's Bespoke", href: "/pages/womens-bespoke" },
-      { label: "Our Heritage", href: "/pages/our-heritage" },
+      { label: "Индивидуальный пошив", href: "https://sognatore.ru/sewing" },
+      { label: "Обувь", href: "https://sognatore.ru/shoes" },
+      { label: "Ткани", href: "https://sognatore.ru/catalog" },
+      { label: "Подарочный сертификат", href: "https://sognatore.ru/certificate" },
+      { label: "Корпоративные заказы", href: "https://sognatore.ru/corporate" },
+      { label: "Выездной сервис", href: "https://sognatore.ru/outcall" },
     ],
   },
   {
-    title: "Policies",
+    title: "Покупателям",
     links: [
-      { label: "Refund Policy", href: "/policies/refund-policy" },
-      { label: "Privacy Policy", href: "/policies/privacy-policy" },
-      { label: "Terms of Service", href: "/policies/terms-of-service" },
-      { label: "Shipping Policy", href: "/policies/shipping-policy" },
+      { label: "Контакты", href: "https://sognatore.ru/contacts" },
+      { label: "Политика конфиденциальности", href: "https://sognatore.ru/policy" },
+      { label: "Договор оферты", href: "https://sognatore.ru/oferta" },
     ],
   },
 ];
 
 export const socials: NavItem[] = [
-  { label: "Twitter", href: "https://twitter.com/SextonBespoke" },
-  { label: "Facebook", href: "https://www.facebook.com/edwardsextonbespoke" },
-  { label: "Youtube", href: "https://www.youtube.com/user/EdwardSextonTailor" },
-  { label: "Instagram", href: "https://www.instagram.com/edwardsexton/" },
-  { label: "Pinterest", href: "https://www.pinterest.co.uk/Sextonbespoke/_saved/" },
+  { label: "WhatsApp", href: "https://wa.me/89774933209" },
+  { label: "Telegram", href: "https://t.me/harrisson_shoes" },
 ];
+
+export const contact = {
+  title: "Записаться на снятие мерок",
+  copy:
+    "Оставьте заявку или позвоните: менеджер согласует встречу в бутике, дома или в офисе.",
+  address: "Москва, Ленинградский пр-т., 15с28",
+  addressFull: "г. Москва, ул. Ленинградский проспект д. 15, стр. 28",
+  hours: "ежедневно с 11.00 до 20.00",
+  phone: "+7 (985) 910-88-88",
+  phoneHref: "tel:+79859108888",
+  secondaryPhone: "+7 (977) 493-32-09",
+  secondaryPhoneHref: "tel:+79774933209",
+  whatsapp: "https://wa.me/89774933209",
+};

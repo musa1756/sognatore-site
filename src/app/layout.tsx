@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Edward Sexton",
+  title: "Sognatore | Индивидуальный пошив мужской одежды и обуви",
   description:
-    "Edward Sexton homepage clone: Savile Row bespoke tailoring and ready-to-wear collections.",
+    "Бутик-ателье Sognatore в Москве: индивидуальный пошив костюмов, пальто, рубашек и обуви по вашим меркам.",
   icons: {
-    icon: "/seo/favicon.png",
+    icon: "/seo/sognatore-favicon.png",
   },
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body>{children}</body>
     </html>
   );

@@ -4,8 +4,8 @@ export function Hero() {
   return (
     <section className="hero-section">
       <picture className="hero-media">
-        <source media="(max-width: 767px)" srcSet="/images/hero-mobile.jpg" />
-        <img src="/images/hero-desktop.jpg" alt="" />
+        <source media="(max-width: 767px)" srcSet="/images/sognatore-measure.jpg" />
+        <img src="/images/sognatore-craft-photo.png" alt="" />
       </picture>
       <div className="image-overlay" />
       <div className="hero-content">

@@ -6,7 +6,7 @@ type GalleryGridProps = {
 
 export function GalleryGrid({ items }: GalleryGridProps) {
   return (
-    <section className="gallery-stack" aria-label="Edward Sexton collections">
+    <section className="gallery-stack" aria-label="Sognatore services">
       {chunk(items).map((row, index) => (
         <div className={`gallery-row ${row.length === 1 ? "gallery-row--single" : ""}`} key={index}>
           {row.map((item) => (

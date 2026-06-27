@@ -1,4 +1,4 @@
-import { AnnouncementBar } from "@/components/AnnouncementBar";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { GalleryGrid } from "@/components/GalleryGrid";
 import { Header } from "@/components/Header";
@@ -8,11 +8,11 @@ import { galleryItems } from "@/lib/site";
 export default function Home() {
   return (
     <>
-      <AnnouncementBar />
       <Header />
       <main>
         <Hero />
         <GalleryGrid items={galleryItems} />
+        <ContactSection />
       </main>
       <Footer />
     </>

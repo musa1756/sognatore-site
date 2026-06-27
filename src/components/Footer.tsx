@@ -1,28 +1,28 @@
-import { footerColumns, socials } from "@/lib/site";
+import { contact, footerColumns, socials } from "@/lib/site";
 
 export function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-grid">
         <section className="footer-block">
-          <h2>Edward Sexton</h2>
+          <h2>Sognatore</h2>
           <p>
-            When compared with Edward, no tailor has achieved so much, nor captured such an
-            extraordinary sense of the avant-garde in his work: of sex appeal, glamour, style or
-            verve.
+            Бутик-ателье индивидуального пошива мужской одежды и обуви. Москва,
+            Ленинградский пр-т., 15с28.
           </p>
         </section>
 
         <section className="footer-block footer-newsletter">
-          <h2>Join us</h2>
-          <p>Sign up for exclusive offers, original stories, events and more.</p>
+          <h2>Консультация</h2>
+          <p>Оставьте телефон или email, чтобы согласовать встречу с экспертом.</p>
           <form className="newsletter-form">
-            <input aria-label="Email" placeholder="Enter email" type="email" />
+            <input aria-label="Телефон или email" placeholder="Телефон или email" type="text" />
             <button className="button button--footer" type="submit">
-              Sign up
+              Оставить заявку
             </button>
           </form>
           <div className="social-links" aria-label="Social links">
+            <a href={contact.phoneHref}>{contact.phone}</a>
             {socials.map((social) => (
               <a href={social.href} key={social.label}>
                 {social.label}
@@ -43,7 +43,7 @@ export function Footer() {
         ))}
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Edward Sexton. Designed &amp; Built by Studio Graft.</span>
+        <span>© 2026 Sognatore. {contact.hours}.</span>
       </div>
     </footer>
   );
